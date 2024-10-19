@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*STYLES BEGIN*/
+
+button{
+  width:24px;
+  height:24px;
+  display:grid;
+  place-content: center;
+  border-radius: 100%;
+  border:none;
+  cursor: pointer;
+ 
+}
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  font-family:'Work Sans';
+  background-color: hsl(275, 100%, 97%);
+  margin:0;
+  padding:0;
+  position:relative;
+}
+
+.content{
+  padding:25px;
+  width:375px;
+  border-radius:10px;
+  background-color:white;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap:45px;
+}
+.card-head{
+  display:flex;
+  justify-content: flex-start;
+  gap:20px;
+  color:hsl(292, 42%, 14%);
+}
+.card p{
+  font-weight:600;
+  color:hsl(292, 42%, 14%);
+}
+
+p{
+  font-weight:400;
+  color:hsl(292, 16%, 49%);
+
+}
+
+.bgimage {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 375px;
+  background-image: url('/assets/images/background-pattern-mobile.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .content{
+    width:650px;
+  }
+
+  .card p{
+    cursor: pointer;
+  }
+
+  .card p:hover{
+    color:hsl(292, 16%, 49%);
+  }
+}
+
+
