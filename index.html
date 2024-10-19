@@ -8,19 +8,19 @@
   <title>Frontend Mentor | FAQ accordion</title>
 </head>
 <body>
-  <img class="bgimage" src ="/assets/images/background-pattern-mobile.svg">
+  <img class="bgimage" src ="background-pattern-mobile.svg">
 
   <div class="content">
 
     <div class="card-head">
-    <img src = "/assets/images/icon-star.svg">
+    <img src = "icon-star.svg">
     <h1>FAQs</h1>
     </div>
 
     <div class="js-first-card card">
       <p onclick="displaysFirstMessage();">What is Frontend Mentor,and how will it help me?</p>
       <button class="js-first-button" onclick="displaysFirstMessage();">
-          <img id="buttonIcon1" src="/assets/images/icon-plus.svg" alt="Toggle Icon">
+          <img id="buttonIcon1" src="icon-plus.svg" alt="Toggle Icon">
       </button>
     </div>
     <p class="js-first-answer"></p>
@@ -28,7 +28,7 @@
     <div class="js-second-card card">
       <p onclick="displaysSecondMessage();">Is Frontend Mentor free?</p>
       <button class="js-second-button" onclick="displaysSecondMessage();">
-      <img id="buttonIcon2" src="/assets/images/icon-plus.svg" alt="Toggle Icon">
+      <img id="buttonIcon2" src="icon-plus.svg" alt="Toggle Icon">
       </button>
     </div>
     <p class="js-second-answer"></p>
@@ -36,7 +36,7 @@
     <div class="js-third-card card">
       <p onclick="displayThirdMessage();">Can I use Frontend Mentor projects in my portfolio?</p>
       <button class="js-third-button" onclick="displayThirdMessage();">
-      <img id="buttonIcon3" src="/assets/images/icon-plus.svg" alt ="Toggle Icon">
+      <img id="buttonIcon3" src="icon-plus.svg" alt ="Toggle Icon">
       </button>
     </div>
     <p class="js-third-answer"></p>
@@ -44,7 +44,7 @@
     <div class="js-fourth-card card">
       <p onclick ="displayFourthMessage()">How can I get help if I'm stuck on a Frontend Mentor challenge?</p>
       <button class="js-fourth-button" onclick="displayFourthMessage();">
-      <img id="buttonIcon4" src="/assets/images/icon-plus.svg" alt ="Toggle Icon">
+      <img id="buttonIcon4" src="icon-plus.svg" alt ="Toggle Icon">
       </button>
     </div>
     <p class="js-fourth-answer"></p>
@@ -62,10 +62,10 @@
     
     if (displayText.innerHTML) {
       displayText.innerHTML = '';
-      buttonIcon1.src = '/assets/images/icon-plus.svg';
+      buttonIcon1.src = 'icon-plus.svg';
     } else {
       displayText.innerHTML = "Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.";
-      buttonIcon1.src = '/assets/images/icon-minus.svg';
+      buttonIcon1.src = 'icon-minus.svg';
     }
   }
   function displaysSecondMessage(){
@@ -74,10 +74,10 @@
 
     if (displayText.innerHTML){
       displayText.innerHTML ='';
-      buttonIcon2.src = '/assets/images/icon-plus.svg';
+      buttonIcon2.src = 'icon-plus.svg';
     } else {
       displayText.innerHTML = " Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access to a range of projects suitable for all skill levels."
-      buttonIcon2.src = '/assets/images/icon-minus.svg';
+      buttonIcon2.src = 'icon-minus.svg';
     }
   }
   function displayThirdMessage(){
@@ -86,10 +86,10 @@
 
     if (displayText.innerHTML){
       displayText.innerHTML ='';
-      buttonIcon3.src = '/assets/images/icon-plus.svg';
+      buttonIcon3.src = 'icon-plus.svg';
     } else {
       displayText.innerHTML = " Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent way to showcase your skills to potential employers!"
-      buttonIcon3.src = '/assets/images/icon-minus.svg';
+      buttonIcon3.src = 'icon-minus.svg';
     }
   };
   function displayFourthMessage(){
@@ -97,10 +97,10 @@
   const buttonIcon4 = document.getElementById('buttonIcon4');
     if (displayText.innerHTML){
       displayText.innerHTML ='';
-      buttonIcon4.src = '/assets/images/icon-plus.svg';
+      buttonIcon4.src = 'icon-plus.svg';
     } else {
       displayText.innerHTML = "The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members."
-      buttonIcon4.src = '/assets/images/icon-minus.svg';
+      buttonIcon4.src = 'icon-minus.svg';
     }
   };
 </script>
