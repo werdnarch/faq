@@ -64,7 +64,7 @@ p{
   position: absolute;
   z-index: -1;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 375px;
   background-image: url('background-pattern-mobile.svg');
   background-size: cover;
