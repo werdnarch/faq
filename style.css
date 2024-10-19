@@ -66,7 +66,7 @@ p{
   top: 0;
   width: 100%;
   height: 375px;
-  background-image: url('/assets/images/background-pattern-mobile.svg');
+  background-image: url('background-pattern-mobile.svg');
   background-size: cover;
   background-position: center;
 }
